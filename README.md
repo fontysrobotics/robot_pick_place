@@ -31,9 +31,9 @@ Check if MoveIt is installed.
 $ rospack find moveit_core 
 ```
 
-If you need to install MoveIt, please follow the instructions for your ROS version in ([Link Text](http://moveit.ros.org/install/)).
+If you need to install MoveIt, please follow the instructions for your ROS version, see: http://moveit.ros.org/install/.
 
-Install the industrial_robot_simulator package ([Link Text](http://wiki.ros.org/industrial_robot_simulator)) for simulation purposses.
+Install the industrial_robot_simulator package (http://wiki.ros.org/industrial_robot_simulator) for simulation purposses.
 The simulation is performed and shown in Rviz, create a simulated world (when possible) that recreates the robot pick and place scene, 
 then execute the robot_pick_place packege and visualize its performance in Rviz while saving energy and avoiding any possible malfunction.
 
@@ -45,4 +45,4 @@ Check if TF is installed.
 $ rospack find tf
 ```
 
-If you need to install TF, please follow the instructions for your ROS version in ([Link Text](http://wiki.ros.org/tf)).
+If you need to install TF, please follow the instructions for your ROS version, see: http://wiki.ros.org/tf.
