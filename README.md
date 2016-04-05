@@ -33,11 +33,12 @@ $ rospack find moveit_core
 
 If you need to install MoveIt, please follow the instructions for your ROS version, see: http://moveit.ros.org/install/.
 
-Install the industrial_robot_simulator package (http://wiki.ros.org/industrial_robot_simulator) for simulation purposses.
+Install the industrial_robot_simulator package (http://wiki.ros.org/industrial_robot_simulator) for simulation purposes.
 The simulation is performed and shown in Rviz, create a simulated world (when possible) that recreates the robot pick and place scene, 
-then execute the robot_pick_place packege and visualize its performance in Rviz while saving energy and avoiding any possible malfunction.
+then execute the robot_pick_place package and visualize its performance in Rviz. Simulating pick and place tasks, avoids setting up the
+robots while saving energy and avoiding any possible malfunction.
 
-The TF package is udsed for communicating trhough the different nodes running, while keeping track of the different coordinate frames over time.
+The TF package is used for communicating through the different nodes running, while keeping track of the different coordinate frames over time.
 
 Check if TF is installed.
 
