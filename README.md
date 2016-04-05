@@ -20,3 +20,29 @@ Please, follow the Getting Started wiki page for instructions on installing the 
 
 Please, follow the Running the robot_pick_place Package wiki on running and implementing the robot_pick_place package with a multi-jointed ROS compatible robot
 and an existing computer vision solution.
+
+## Installing Dependent packages
+
+To be able to use robot_pick_place successfully, please install the package MoveIt (http://wiki.ros.org/moveit).
+
+Check if MoveIt is installed.
+
+```
+$ rospack find moveit_core 
+```
+
+If you need to install MoveIt, please follow the instructions for your ROS version in ([Link Text](http://moveit.ros.org/install/)).
+
+Install the industrial_robot_simulator package ([Link Text](http://wiki.ros.org/industrial_robot_simulator)) for simulation purposses.
+The simulation is performed and shown in Rviz, create a simulated world (when possible) that recreates the robot pick and place scene, 
+then execute the robot_pick_place packege and visualize its performance in Rviz while saving energy and avoiding any possible malfunction.
+
+The TF package is udsed for communicating trhough the different nodes running, while keeping track of the different coordinate frames over time.
+
+Check if TF is installed.
+
+```
+$ rospack find tf
+```
+
+If you need to install TF, please follow the instructions for your ROS version in ([Link Text](http://wiki.ros.org/tf)).
