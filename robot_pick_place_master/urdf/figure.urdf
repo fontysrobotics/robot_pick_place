@@ -1,0 +1,19 @@
+  <link name="base_link01">
+    <visual>
+      <geometry>
+        <cylinder length="0.0202" radius="0.0467"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 .8 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.0202" radius="0.0467"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0000579" ixy="0.0" ixz="0.0" iyy="0.0000579" iyz="0.0" izz="0.000109"/>
+    </inertial>
+  </link>
