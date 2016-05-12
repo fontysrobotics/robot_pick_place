@@ -29,11 +29,11 @@ class Pickable{
                 ////// ..... NOTE: To name the Pickable objects is recommended to follow this convention: "pickable_link00", "pickable_link01",... "pickable_link99"
         Pickable(const ros::NodeHandle nh, const double x_position, const double y_position, const double z_position, const double yaw_angle, const std::string tf_link);
         
-        ///// Constructor of the class Pickable, it is used to create a single pickable object with all the orientation angles (row, pitch, yaw).
-        //Pickable(const ros::NodeHandle nh, const double x_position, const double y_position, const double z_position, const double row_angle, const double pitch_angle, const double yaw_angle);
+        ///// Constructor of the class Pickable, it is used to create a single pickable object with all the orientation angles (roll, pitch, yaw).
+        //Pickable(const ros::NodeHandle nh, const double x_position, const double y_position, const double z_position, const double roll_angle, const double pitch_angle, const double yaw_angle);
         ///// Constructor of the class Pickable, it shuold be used only if the user wants to create several Pickable objects (an array or vector of Pickable)
-        ///// and the user provides all the orientation angles (row, pitch, yaw).
-        //Pickable(const ros::NodeHandle nh, const double x_position, const double y_position, const double z_position, const double row_angle, const double pitch_angle, const double yaw_angle, const std::string tf_link);
+        ///// and the user provides all the orientation angles (roll, pitch, yaw).
+        //Pickable(const ros::NodeHandle nh, const double x_position, const double y_position, const double z_position, const double roll_angle, const double pitch_angle, const double yaw_angle, const std::string tf_link);
         
         ///// Constructor of the class Pickable, it is NOT RECOMENDED to use this constructor, it is meant to provide flexibility to the developers, so they
         ///// can create an instance of a Pickable class and assign the values when needed.
@@ -61,10 +61,10 @@ class Pickable{
     	void setZPosition(const double z_position);
     	
     	///// Returns a double value of the yaw angle in radians of the pickable object
-    	double getRowAngle();
+    	double getRollAngle();
     	
     	///// The _yawAngle MUST BE a double value in radians >=0.
-    	void setRowAngle(const double row_angle);
+    	void setRollAngle(const double roll_angle);
     	
     	///// Returns a double value of the yaw angle in radians of the pickable object
     	double getPitchAngle();
@@ -98,7 +98,7 @@ class Pickable{
         double x_position_;
         double y_position_;
         double z_position_;
-        double row_angle_;
+        double roll_angle_;
         double pitch_angle_;
         double yaw_angle_;
         std::string tf_link_;

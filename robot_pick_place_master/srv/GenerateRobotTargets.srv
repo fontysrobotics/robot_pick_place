@@ -1,0 +1,4 @@
+float64 surface_height
+---
+geometry_msgs/PoseStamped[] poses
+bool is_generated

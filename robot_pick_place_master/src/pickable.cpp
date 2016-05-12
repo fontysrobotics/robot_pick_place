@@ -39,11 +39,11 @@ void Pickable::setZPosition(const double z_position){
     Pickable::z_position_ = z_position;
 }
 
-void Pickable::setRowAngle(const double row_angle){
-    if(row_angle >= 0.0)
-        Pickable::row_angle_ = row_angle;
+void Pickable::setRollAngle(const double roll_angle){
+    if(roll_angle >= 0.0)
+        Pickable::roll_angle_ = roll_angle;
     else
-        Pickable::row_angle_ = 0.0;
+        Pickable::roll_angle_ = 0.0;
 }
 
 void Pickable::setPitchAngle(const double pitch_angle){
@@ -77,7 +77,7 @@ double Pickable::getZPosition(){
     return Pickable::z_position_;
 }
 
-double Pickable::getRowAngle(){
+double Pickable::getRollAngle(){
     return Pickable::row_angle_;
 }
 
